@@ -1,0 +1,124 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+header {
+  background-color: rgb(244, 143, 205);
+  height: 55px;
+  z-index: 100;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+header img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.menu-container {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.menu-container .menu-item-1,
+.menu-container .menu-item-2,
+.menu-container .menu-item-3 {
+  font-size: 12px;
+  font-family: Montserrat, Arial;
+  cursor: pointer;
+}
+
+.menu-item-1:hover,
+.menu-item-2:hover,
+.menu-item-3:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: Archivo, Arial;
+  font-size: 24px;
+}
+
+p {
+  font-family: Montserrat, Arial;
+  font-size: 12px;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-container img {
+  box-shadow: inset 0 0 0 50vw rgba(255,0,150,0.5);
+  background-color: gray;
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  position: relative;
+
+  margin-top: 30px;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background-color: rgba(44, 0, 19, 0.5);
+  margin-top: 30px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+
+}
+
+.hero-container button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: rgb(202, 37, 139);
+  background-color: rgb(244, 143, 205);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.image-text-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+.image-text-layout img {
+  width: 40%;
+  border-radius: 20px;
+}
+
+.image-text-layout text {
+  width: 60%;
+}
